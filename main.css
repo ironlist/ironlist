@@ -1,0 +1,20 @@
+body {
+    width: 95%;
+    background: #EEEEEE;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+  vertical-align: middle;   
+}
+
+.checkimg {
+    opacity: 0.5;  
+    padding: 2px;
+    filter: alpha(opacity=50);
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}

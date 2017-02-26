@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ironman Checklist</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<script src="main.js"></script
+		<link rel="icon" type="image/png" href="icon.png" sizes="16x16"/>
+		<script type="text/javascript">
+		   window.onload = function() {
+			var anchors = document.getElementsByTagName('img');
+			for(var i = 0; i < anchors.length; i++) {
+			    if (localStorage["opacity"+i]) {
+				anchors[i].style.opacity = localStorage["opacity"+i];
+			    }
+    			    anchors[i].addEventListener('click',function() {
+				var arr = Array.prototype.slice.call(anchors);
+				redirect(this, arr.indexOf(this)); 
+			    }, false);
+			}
+		   };
+		   function redirect(element, i) {
+			if (element.style.opacity.toString() == "0.5") {
+				element.style.opacity = "1";
+				element.style.filter = 'alpha(opacity=100)';
+				localStorage["opacity"+i] = "1";
+			} else if (element.style.opacity.toString() == "1") {
+				element.style.opacity = "0.5";
+				element.style.filter = 'alpha(opacity=50)';
+				localStorage["opacity"+i] = "0.5";
+			} 
+		   }
+		</script>
+	</head>
+	<body>
+		<nav>
+    			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/users">Users</a></li>
+        			<li class="dropdown">
+  					<button onclick="toggleDrop()" class="dropbtn">Ranks</button>
+	        			<div id="myDropdown" class="dropdown-content">
+	        				<a href="/totallevel">Total Level</a>
+	        				<a href="/totalxp">Total Experience</a>
+	        				<a href="/firsts">Accomplishments</a>
+	        			</div>
+        			</li>
+        			<li class="dropdown">
+  					<button onclick="toggleDrop()" class="dropbtn">Calculators</button>
+	        			<div id="myDropdown" class="dropdown-content">
+	        				<a href="/petcalc">Pet Chance</a>
+	        				<a href="/successcalc">Success Rate</a>
+	        			</div>
+        		  	</li>
+              			<li class="dropdown">
+  					<button onclick="toggleDrop()" class="dropbtn">Guides</button>
+	        			<div id="myDropdown" class="dropdown-content">
+	        				<a href="/equipment">Equipment</a>
+	        			</div>
+        		  	</li>
+				<li><a href="/map">Map</a></li>
+				<li><a href="/checklist">Checklist</a></li>
+    			</ul>
+		</nav>
+		<h1>Checklist<br></h1>
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/b/be/Baby_chinchompa_%28grey%29.png/revision/latest?cb=20151105205710&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/2/26/Beaver.png/revision/latest?cb=20151105140258" alt="" class="checkimg">
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/a/a0/Heron.png/revision/latest?cb=20151105140258&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette3.wikia.nocookie.net/2007scape/images/2/22/Rock_golem.png/revision/latest?cb=20170209215721&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette3.wikia.nocookie.net/2007scape/images/1/1c/Tangleroot.png/revision/latest?cb=20160901105833&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette3.wikia.nocookie.net/2007scape/images/b/b8/Rift_guardian_%28blood%29.png/revision/latest?cb=20160902143021" alt="" class="checkimg">
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/8/82/Rocky.png/revision/latest?cb=20160901105832&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/c/c1/Phoenix.png/revision/latest?cb=20160908103318&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette2.wikia.nocookie.net/2007scape/images/6/6d/Bloodhound.png/revision/latest?cb=20160706132528&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette1.wikia.nocookie.net/2007scape/images/f/f4/Olmlet.png/revision/latest?cb=20170105115449&format=webp" alt="" class="checkimg">
+		      <img src="http://vignette4.wikia.nocookie.net/2007scape/images/d/d8/Toy_cat.png/revision/latest?cb=20140508203537&format=webp" alt="" class="checkimg">
+		<br>
+	</body>
+	
+	<footer>
+    <ul>
+      <li><a href="mailto:zeahproduct@gmail.com">email</a></li>
+      <li><a href="https://github.com/ZeahProduct">github.com/zeahproduct</a></li>
+    </ul>
+	</footer>
+</html>
