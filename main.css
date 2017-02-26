@@ -1,5 +1,5 @@
 body {
-    width: 75%;
+    width: 80%;
     margin: 60px auto;
     background: #EEEEEE;
 }
@@ -30,6 +30,7 @@ footer ul li {
 
 footer ul li a {
     color: #999;
+    padding: 2px;
 }
 
 a {
