@@ -18,3 +18,16 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
+footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: #999;
+}
