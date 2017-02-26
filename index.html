@@ -18,15 +18,19 @@
 			}
 		   };
 		   function redirect(element, i) {
-			if (element.style.opacity.toString() == "0.5") {
+			if (element.style.opacity == "0.5") {
 				element.style.opacity = "1";
 				element.style.filter = 'alpha(opacity=100)';
 				localStorage["opacity"+i] = "1";
-			} else if (element.style.opacity.toString() == "1") {
+			} else if (element.style.opacity == "1") {
 				element.style.opacity = "0.5";
 				element.style.filter = 'alpha(opacity=50)';
 				localStorage["opacity"+i] = "0.5";
-			} 
+			} else {
+				element.style.opacity = "1";
+				element.style.filter = 'alpha(opacity=100)';
+				localStorage["opacity"+i] = "1";
+			}   
 		   }
 		</script>
 	</head>
