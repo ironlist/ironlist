@@ -7,7 +7,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript">
 		   window.onload = function() {
-			      
 		   	$('.content ul').remove();
 			var anchors = document.getElementsByTagName('img');
 			for(var i = 0; i < anchors.length; i++) {
@@ -65,7 +64,7 @@
 				prefix+"c/c3/Farmer%27s_boro_trousers.png/revision/latest?cb=20160204104952",
 				prefix+"f/f0/Seed_box.png/revision/latest?cb=20160204104953",
 				  ];
-			$ul = $('<ul/>').appendTo('.section');
+			$ul = $('<ul/>').appendTo('.content');
 			
 			for(var i = 0; i < row1.length; i++) {
 				$ul.append('<img src="' + row1[i] + '" alt="" class="checkimg">');
@@ -103,7 +102,7 @@
 		<img src="http://vignette3.wikia.nocookie.net/2007scape/images/c/c3/Farmer%27s_boro_trousers.png/revision/latest?cb=20160204104952" alt="" class="checkimg">
 		<img src="http://vignette1.wikia.nocookie.net/2007scape/images/f/f0/Seed_box.png/revision/latest?cb=20160204104953" alt="" class="checkimg">
 		<br><br><br>
-		<div class="section">
+		<div class="content">
 			
 		</div>
 	</body>
