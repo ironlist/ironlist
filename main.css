@@ -8,8 +8,7 @@ img {
   vertical-align: middle;   
   height: 32px;
   width: 32px;
-  -o-object-fit: cover;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 .checkimg {
