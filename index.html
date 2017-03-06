@@ -4,8 +4,11 @@
 		<title>Ironman Checklist</title>
 		<link rel="stylesheet" type="text/css" href="/main.css">
 		<link rel="icon" type="image/png" href="icon.png" sizes="16x16"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript">
 		   window.onload = function() {
+			      
+		   	$('.content ul').remove();
 			var anchors = document.getElementsByTagName('img');
 			for(var i = 0; i < anchors.length; i++) {
 			    if (localStorage["opacity"+i]) {
