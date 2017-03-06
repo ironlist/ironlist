@@ -16,6 +16,7 @@
 				redirect(this, arr.indexOf(this)); 
 			    }, false);
 			}
+			draw();
 		   };
 		   function redirect(element, i) {
 			if (element.style.opacity == "0.5") {
@@ -31,6 +32,46 @@
 				element.style.filter = 'alpha(opacity=100)';
 				localStorage["opacity"+i] = "1";
 			}   
+		   }
+		   function draw() {
+			var prefix = "http://vignette1.wikia.nocookie.net/2007scape/images/", $ul;
+			var blank = "blank.png"
+			var row1=[
+				prefix+"c/c9/Graceful_hood.png/revision/latest?cb=20140717120717",
+				prefix+"8/8b/Graceful_top.png/revision/latest?cb=20140717120718",
+				prefix+"6/64/Graceful_gloves.png/revision/latest?cb=20140717120717",
+				blank,
+				prefix+"7/7c/Prospector_helmet.png/revision/latest?cb=20140425013308",
+				prefix+"4/41/Prospector_jacket.png/revision/latest?cb=20140427193754",
+				prefix+"5/57/Gem_bag.png/revision/latest?cb=20140615023119",
+				blank,
+				prefix+"b/bc/Farmer%27s_strawhat.png/revision/latest?cb=20160204104953",
+				prefix+"b/bd/Farmer%27s_jacket.png/revision/latest?cb=20160204104952",
+				prefix+"e/ed/Gricoller%27s_can.png/revision/latest?cb=20160113004803",
+				  ];
+			var row2=[
+				prefix+"5/54/Graceful_cape.png/revision/latest?cb=20140717120717",
+				prefix+"c/c5/Graceful_legs.png/revision/latest?cb=20140717120718",
+				prefix+"1/15/Graceful_boots.png/revision/latest?cb=20140717120716",
+				blank,
+				prefix+"3/30/Prospector_boots.png/revision/latest?cb=20140430152242",
+				prefix+"a/a2/Prospector_legs.png/revision/latest?cb=20140430032042",
+				prefix+"3/3c/Coal_bag.png/revision/latest?cb=20140615023104",
+				blank,
+				prefix+"4/4d/Farmer%27s_boots.png/revision/latest?cb=20160204104950",
+				prefix+"c/c3/Farmer%27s_boro_trousers.png/revision/latest?cb=20160204104952",
+				prefix+"f/f0/Seed_box.png/revision/latest?cb=20160204104953",
+				  ];
+			$ul = $('<ul/>').appendTo('.section');
+			
+			for(var i = 0; i < row1.length; i++) {
+				$ul.append('<img src="' + row1[i] + '" alt="" class="checkimg">');
+			}
+			$ul.append('<br>');
+			for(var i = 0; i < row2.length; i++) {
+				$ul.append('<img src="' + row2[i] + '" alt="" class="checkimg">');
+			} 
+			$ul.append('<br><br>');
 		   }
 		</script>
 	</head>
@@ -58,6 +99,10 @@
 		<img src="http://vignette3.wikia.nocookie.net/2007scape/images/4/4d/Farmer%27s_boots.png/revision/latest?cb=20160204104950" alt="" class="checkimg">
 		<img src="http://vignette3.wikia.nocookie.net/2007scape/images/c/c3/Farmer%27s_boro_trousers.png/revision/latest?cb=20160204104952" alt="" class="checkimg">
 		<img src="http://vignette1.wikia.nocookie.net/2007scape/images/f/f0/Seed_box.png/revision/latest?cb=20160204104953" alt="" class="checkimg">
+		<br><br><br>
+		<div class="section">
+			
+		</div>
 	</body>
 	
 	<footer>
