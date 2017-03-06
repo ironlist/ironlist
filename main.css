@@ -9,6 +9,7 @@ img {
   height: 32px;
   width: 32px;
   -o-object-fit: contain;
+  overflow: hidden;
 }
 
 .checkimg {
